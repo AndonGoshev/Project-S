@@ -1,0 +1,215 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Marmelad&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+ * {
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: 100%;
+}
+
+.site {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex: 1 0 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5297AC;
+    width: 85%;
+}
+
+main .goal {
+    width: 75%;
+    background-color: #A6C6C1;
+}
+
+main .needs-to-be-done {
+    width: 75%;
+    background-color: #e6e0cf;
+}
+
+main .needed-materials {
+    width: 75%;
+    background-color: #DEBFB5;
+}
+
+footer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BAA6A5;
+    margin-bottom: 2em;
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 0 5%;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 900;
+    color: rgba(5, 5, 5, 0.496);
+}
+
+main > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+header, main > *, footer {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px,
+    inset 0 0 3px 1px #ffffff;
+}
+
+
+li {
+    list-style: circle;
+}
+
+
+.description , footer{
+    font-family: "Shantell Sans", cursive;;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+
+.main-desc {
+    font-family: "Shantell Sans", cursive;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    width: 75%;
+    background-color: #dacbc6;
+}
+
+.pricing .section-title {
+    font-size: 2.5em;
+}
+
+.pricing .materials {
+    max-width: 60%;
+    padding-bottom: 5em;
+    border-bottom: 3px solid grey;
+}
+
+.pricing .work {
+    margin-bottom: 4em;
+
+}
+
+.pricing > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing li {
+    font-family: "Shantell Sans", cursive;
+    font-size: 1.2em;
+}
+
+.pricing .secondary-title {
+    font-family: "Shantell Sans", cursive;
+    font-size: 2em;
+}
+
+span {
+    color: rgb(252, 86, 86);
+}
+
+.total-price {
+    color: rgb(252, 86, 86);
+    font-family: "Shantell Sans", cursive;
+    font-size: 2em;
+}
+
+@media (max-width: 500px) {
+    .description {
+        font-size: 14px;
+    }
+    
+    .main-desc {
+        font-size: 1em;
+    }
+
+    .pricing .materials, .pricing .work {
+        max-width: 100%;
+    }
+    
+    .pricing .section-title {
+        font-size: 1.4em;
+    }
+
+    .pricing .secondary-title {
+        font-size: 1.3em;
+    }
+
+    .pricing li {
+        font-size: 0.8em;
+    }
+
+    .total-price {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 800px) {
+    .description {
+        font-size: 1.5em;
+    }
+    
+    .site-title {
+        font-size: 6em;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+}
